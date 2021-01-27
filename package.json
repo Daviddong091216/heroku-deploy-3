@@ -3,8 +3,35 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "phaser": "^3.23.0"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    },
+    "setupFiles": [
+      "jest-canvas-mock"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less|sass|scss)$": "<rootDir>/test/mocks/styleMock.js",
+      "\\.(gif|ttf|eot|svg|png|html)$": "<rootDir>/test/mocks/fileMock.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -15,13 +42,5 @@
   "bugs": {
     "url": "https://github.com/Daviddong091216/heroku-deploy-3/issues"
   },
-  "homepage": "https://github.com/Daviddong091216/heroku-deploy-3#readme",
-  "devDependencies": {
-    "webpack": "^5.18.0",
-    "webpack-cli": "^4.4.0"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "phaser": "^3.23.0"
-  }
+  "homepage": "https://github.com/Daviddong091216/heroku-deploy-3#readme"
 }
