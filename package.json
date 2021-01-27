@@ -1,0 +1,27 @@
+{
+  "name": "herokudeploy0127",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daviddong091216/heroku-deploy-3.git"
+  },
+  "author": "David Dong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daviddong091216/heroku-deploy-3/issues"
+  },
+  "homepage": "https://github.com/Daviddong091216/heroku-deploy-3#readme",
+  "devDependencies": {
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "phaser": "^3.23.0"
+  }
+}
